@@ -22,7 +22,7 @@ homepage := Some(url("https://github.com/diadys/scala-js-formvalidation"))
 scalaVersion := "2.11.7"
 
 scmInfo := Some(ScmInfo(
-    url("git@github.com:diadys/scala-js-formvalidation.git"),
+    url("https://github.com/diadys/scala-js-formvalidation.git"),
     "scm:git:git@github.com:diadys/scala-js-formvalidation.git",
     Some("scm:git:git@github.com:diadys/scala-js-formvalidation.git")))
     
