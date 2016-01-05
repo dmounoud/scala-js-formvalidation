@@ -1,5 +1,7 @@
+lazy val bsFacadeProject = RootProject(file("../scala-js-bootstrap"))
+
 lazy val scalaJsFormValidation = project.in(file(".")).
-  enablePlugins(ScalaJSPlugin)
+  enablePlugins(ScalaJSPlugin).dependsOn(bsFacadeProject)
 
 name := "scala-js-formvalidation"
 
@@ -29,8 +31,8 @@ scmInfo := Some(ScmInfo(
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
-  "com.github.diadys" % "scala-js-bootstrap" % "1.0"
+  "be.doeraene" %%% "scalajs-jquery" % "0.8.1"//,
+  //"com.github.diadys" %%% "scala-js-bootstrap" % "1.1"
 )
 
 jsDependencies ++= Seq(

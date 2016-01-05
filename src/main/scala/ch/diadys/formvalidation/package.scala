@@ -1,4 +1,4 @@
-package ch.diadys.formvalidation
+package ch.diadys
 
 import org.scalajs.jquery.JQuery
 
