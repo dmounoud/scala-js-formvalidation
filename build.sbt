@@ -21,24 +21,24 @@ homepage := Some(url("https://github.com/diadys/scala-js-formvalidation"))
 
 scalaVersion := "2.11.7"
 
+scmInfo := Some(ScmInfo(
+    url("git@github.com:diadys/scala-js-formvalidation.git"),
+    "scm:git:git@github.com:diadys/scala-js-formvalidation.git",
+    Some("scm:git:git@github.com:diadys/scala-js-formvalidation.git")))
+
 libraryDependencies ++= Seq(
   "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
-  "org.webjars" % "jquery" % "2.1.4"
+  "com.github.diadys" % "scala-js-bootstrap" % "1.0"
 )
 
 jsDependencies ++= Seq(
-    ProvidedJS / "fv/bootstrap.min.js",
-    ProvidedJS / "fv/formValidation.min.js",
-    ProvidedJS / "fv/fr.js",
-    ProvidedJS / "fv/mandatoryIcon.min.js",
-    "org.webjars" % "jquery" % "2.1.4" / "jquery.js"
+    ProvidedJS / "fv/bootstrap.js" minified "fv/bootstrap.min.js" dependsOn "fv/formValidation.js",
+    ProvidedJS / "fv/formValidation.js" minified "fv/formValidation.min.js" dependsOn "bootstrap.js",
+    ProvidedJS / "fv/fr.js" dependsOn "fv/bootstrap.js",
+    ProvidedJS / "fv/mandatoryIcon.js" minified "fv/mandatoryIcon.min.js" dependsOn "fv/bootstrap.js"
 )
 
 pomExtra :=
-  <scm>
-    <url>git@github.com:diadys/scala-js-formvalidation.git</url>
-    <connection>scm:git:git@github.com:diadys/scala-js-formvalidation.git</connection>
-  </scm>
   <developers>
     <developer>
       <id>diadys</id>
