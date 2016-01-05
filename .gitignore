@@ -15,3 +15,13 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# Eclipse specific
+.project
+.classpath
+.settings
+/bin/
+.cache-main
+
+# This plugin must be purchased
+src/main/resources/*
