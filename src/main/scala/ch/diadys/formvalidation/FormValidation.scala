@@ -16,7 +16,3 @@ trait FormValidation extends JQuery {
   def on(events: String, handler: js.Function2[JQueryEventObject, js.Dynamic, js.Any]): JQuery = js.native
   
 }
-
-object FormValidation {
-  implicit def jq2fv(jq: JQuery): FormValidation = jq.asInstanceOf[FormValidation]
-}
