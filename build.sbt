@@ -4,7 +4,7 @@ name := "scala-js-formvalidation"
 
 description := "Scala.js FormValivation Facade"
 
-version := "1.0"
+version := "1.8"
 
 organization := "ch.diadys"
 
@@ -29,7 +29,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
   "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
-  "com.github.diadys" %%% "scala-js-bootstrap" % "1.2"
+  "com.github.diadys" % "scala-js-bootstrap" % "1.2"
 )
 
 jsDependencies ++= Seq(
