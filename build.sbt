@@ -29,7 +29,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
   "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
-  "com.github.diadys" % "scala-js-bootstrap" % "1.2"
+  "com.github.diadys" % "scala-js-bootstrap" % "1.3"
 )
 
 jsDependencies ++= Seq(
