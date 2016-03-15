@@ -15,12 +15,15 @@ libraryDependencies +=
   "com.github.diadys" % "scala-js-formvalidation" % "1.0"
 ```
 
-3. Add the following JS files after purchasing FormValidation at http://formvalidation.io/ to your `src/main/resources` folder of your base project:
+3. Add the following JS files after purchasing FormValidation at http://formvalidation.io/ to your `src/main/resources` folder of your base project (do not forget to rename bootstrap.js to fvbootstrap.js to avoid conflict with bootstrap lib):
 
 ```scala
-  fv/bootstrap.min.js
+  fv/fvbootstrap.js
+  fv/fvbootstrap.min.js
+  fv/formValidation.js
   fv/formValidation.min.js
   fv/fr.js
+  fv/mandatoryIcon.js
   fv/mandatoryIcon.min.js
 ```
 
