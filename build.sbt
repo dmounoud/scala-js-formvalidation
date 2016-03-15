@@ -28,8 +28,7 @@ scmInfo := Some(ScmInfo(
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
-  "com.github.diadys" % "scala-js-bootstrap" % "1.3"
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.0"
 )
 
 jsDependencies ++= Seq(
