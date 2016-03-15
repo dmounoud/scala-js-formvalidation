@@ -28,15 +28,15 @@ scmInfo := Some(ScmInfo(
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
   "com.github.diadys" % "scala-js-bootstrap" % "1.3"
 )
 
 jsDependencies ++= Seq(
-    ProvidedJS / "fv/bootstrap.js" minified "fv/bootstrap.min.js" dependsOn "fv/formValidation.js",
+    ProvidedJS / "fv/fvbootstrap.js" minified "fv/fvbootstrap.min.js" dependsOn "fv/formValidation.js",
     ProvidedJS / "fv/formValidation.js" minified "fv/formValidation.min.js" dependsOn "bootstrap.js",
-    ProvidedJS / "fv/fr.js" dependsOn "fv/bootstrap.js",
-    ProvidedJS / "fv/mandatoryIcon.js" minified "fv/mandatoryIcon.min.js" dependsOn "fv/bootstrap.js"
+    ProvidedJS / "fv/fr.js" dependsOn "fv/fvbootstrap.js",
+    ProvidedJS / "fv/mandatoryIcon.js" minified "fv/mandatoryIcon.min.js" dependsOn "fv/fvbootstrap.js"
 )
 
 pomExtra :=
