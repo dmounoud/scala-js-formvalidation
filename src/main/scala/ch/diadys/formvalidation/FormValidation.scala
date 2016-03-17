@@ -15,4 +15,6 @@ trait FormValidation extends JQuery {
   def on(events: String, selector: js.Any, handler: js.Function2[JQueryEventObject, js.Dynamic, js.Any]): JQuery = js.native
   def on(events: String, handler: js.Function2[JQueryEventObject, js.Dynamic, js.Any]): JQuery = js.native
   
+  def revalidateField(fieldName: String): Unit = js.native
+  
 }
