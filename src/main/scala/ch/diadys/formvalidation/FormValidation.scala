@@ -18,5 +18,9 @@ trait FormValidation extends JQuery {
   def revalidateField(fieldName: String): Unit = js.native
   def getFieldElements(fieldName: String): JQuery = js.native
   def isValidField(fieldName: String): Boolean = js.native
+  def getMessages(field: String): String[] = js.native
+  def getMessages(field: JQuery): String[] = js.native
+  def getMessages(field: String, validator: FormValidation): String[] = js.native
+  def getMessages(field: JQuery, validator: FormValidation): String[] = js.native
   
 }
