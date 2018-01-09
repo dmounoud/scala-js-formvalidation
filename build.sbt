@@ -4,7 +4,7 @@ name := "scala-js-formvalidation"
 
 description := "Scala.js FormValivation Facade"
 
-version := "1.11"
+version := "1.14"
 
 organization := "ch.diadys"
 
@@ -18,7 +18,7 @@ licenses += "GPLv3" -> url("http://www.gnu.org/licenses/gpl-3.0.html")
 
 homepage := Some(url("https://github.com/diadys/scala-js-formvalidation"))
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 scmInfo := Some(ScmInfo(
     url("https://github.com/diadys/scala-js-formvalidation.git"),
@@ -28,7 +28,8 @@ scmInfo := Some(ScmInfo(
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.9.2"
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.2",
+  "com.github.diadys" % "scala-js-bootstrap" % "1.8"
 )
 
 jsDependencies ++= Seq(
